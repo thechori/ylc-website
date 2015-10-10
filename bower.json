@@ -1,0 +1,23 @@
+{
+  "name": "ylc-website",
+  "version": "0.0.0",
+  "authors": [
+    "teodizzo <thechori@gmail.com>"
+  ],
+  "description": "The newly, revamped YLC website. The languages and frameworks involved? No idea! Let's build a fuxin' badass website, doe.",
+  "main": "index.php",
+  "keywords": [
+    "ylc",
+    "houston",
+    "volunteering"
+  ],
+  "license": "MIT",
+  "homepage": "ylc.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
