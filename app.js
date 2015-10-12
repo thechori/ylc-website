@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
   // ejs render automatically looks in the views folder
   res.render('index');
-}
+});
 
 // tell server which port to listen on
 app.listen(port, function() {
