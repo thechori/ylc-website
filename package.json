@@ -6,5 +6,8 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Ryan Teodoro"
+  "author": "Ryan Teodoro",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
