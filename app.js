@@ -4,7 +4,7 @@ var express = require('express')
     , path = require('path')
     , cons = require('consolidate')
     , bodyParser = require('body-parser')
-    , dustjs = require('dustjs-linkedin'),
+    , dustjs = require('dustjs-linkedin')
     , mongoose = require('mongoose');
 
 var app = express();
@@ -30,7 +30,7 @@ app.use(express.static(__dirname + '/public'));
 // set the home page route
 app.get('/', function(req, res) {
   // ejs render automatically looks in the views folder
-  res.render('index', {
+  res.render('layouts/main', {
     title: 'home'
   });
 });

@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>{title}</title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+  <!-- header -->
+  {> "layouts/partials/header" /}
+
+  <!-- page content -->
+  {+body/}
+
+  <!-- footer -->
+  
+
+</body>
+</html>
