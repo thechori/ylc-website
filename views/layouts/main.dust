@@ -2,9 +2,12 @@
 <head>
   <title>{title}</title>
   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
+  <br>
+  <br>
+  <h2>Welcome</h2>
   <!-- header -->
   {> "layouts/partials/header" /}
 
@@ -12,7 +15,6 @@
   {+body/}
 
   <!-- footer -->
-  
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+$moneyGreen: #216C2A;
+$fireRed: #9C2A00;
+$ylcPurple: #7D26CD;
+$sexyBlue: #0000e5;
+$lisaYellow: #e6e600;
+
+body {
+  background-color: $ylcPurple;
+  h2 {
+    color: $fireRed;
+  }
+  p {
+    color: $moneyGreen;
+  }
+}
+
+.button {
+  background-color: $sexyBlue;
+}

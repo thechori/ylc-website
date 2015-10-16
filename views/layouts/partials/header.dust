@@ -1,11 +1,4 @@
 <!-- header.dust -->
 <div class="container text-center">
-  <nav id="my-navbar" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div id="logo" class="pull-left">
-        <a href="/"><img src="/images/soundy-46.png"></a>
-      </div>
-      <input type="text" id="search-area" name="search" placeholder="Search" />
-    </div>
-  </nav>
+
 </div>
