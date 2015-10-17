@@ -28,13 +28,18 @@ app.use(bodyParser.json())
 // tell express to look in the public dir for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
-// set the home page route
+// Routes
 app.get('/', function(req, res) {
-  // ejs render automatically looks in the views folder
   res.render('pages/index', {
     title: 'home'
   });
 });
+app.get('/about', function(req, res) {
+  res.render('pages/about', {
+    title: 'about'
+  });
+});
+
 
 // tell server which port to listen on
 app.listen(port, function() {

@@ -1,6 +1,6 @@
 body {
   padding: 100px 0 0 0;
-  background-color: #7D26CD; }
+  background-color: #cccccc; }
   body h2 {
     color: #ffd700; }
   body p {
@@ -15,21 +15,25 @@ body {
 #header_nav {
   width: 100%;
   height: 100px;
-  background-color: #faebd7;
+  background-color: #7D26CD;
   position: fixed;
   top: 0;
   left: 0; }
   #header_nav #header_container {
-    margin: 0 auto;
-    background-color: #216C2A;
+    height: 35px;
+    margin-top: 35px;
+    background-color: white;
     text-align: center; }
   #header_nav #logo {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    bottom: 35px; }
   #header_nav .links {
-    background-color: white;
     display: inline-block;
     width: 40%;
-    padding: 10px 0px; }
+    padding: 10px 0px;
+    position: relative;
+    bottom: 32px; }
     #header_nav .links li {
       list-style: none;
       display: inline-block;
@@ -37,15 +41,9 @@ body {
     #header_nav .links a {
       color: #000080;
       font-size: 16px;
-      background-color: grey;
-      padding: 5px 15px;
-      border-radius: 20px; }
+      font-weight: 600; }
     #header_nav .links a:hover {
       text-decoration: none;
-      background-color: white; }
-    #header_nav .links.left {
-      border: solid 1px orange; }
-    #header_nav .links.right {
-      border: solid 1px red; }
+      color: #8a3bd2; }
 
 /*# sourceMappingURL=index.css.map */
