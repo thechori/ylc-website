@@ -16,7 +16,8 @@ $(window).scroll(function() {
 
       // Animate the image
       $('#logo-img').animate({
-        height: "toggle"
+        width: "40px",
+        height: "40px"
       });
     }
   }
@@ -32,7 +33,8 @@ $(window).scroll(function() {
 
       // Animate the image
       $('#logo-img').animate({
-        height: "toggle"  
+        width: "100px",
+        height: "100px"
       });
     }
   }
