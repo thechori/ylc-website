@@ -14,7 +14,7 @@
   {+body/}
 
   <!-- footer -->
-
+  {> "layouts/partials/footer" /}
 
 </body>
 </html>

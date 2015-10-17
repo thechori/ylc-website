@@ -1,3 +1,4 @@
+// Variables
 $moneyGreen: #216C2A;
 $fireRed: #9C2A00;
 $ylcPurple: #7D26CD;
@@ -8,6 +9,7 @@ $white: #ffffff;
 $gold: #ffd700;
 $offWhite: #faebd7;
 $links: #000080;
+$darkGrey: #323232;
 
 // Sizes
 $medium_text: 16px;
@@ -15,7 +17,7 @@ $medium_text: 16px;
 body {
 
   padding: 100px 0 0 0;
-  background-color: #cccccc;
+  background-color: $ylcPurple;
 
   h2 {
     color: $gold;
@@ -51,7 +53,7 @@ body {
     display: inline-block;
     // background-color: yellow;
     position: relative;
-    bottom: 35px;
+    bottom: 30px;
   }
 
   .links {
@@ -59,7 +61,7 @@ body {
     width: 40%;
     padding: 10px 0px;
     position: relative;
-    bottom: 32px;
+    bottom: 56px;
 
     li {
       list-style: none;
@@ -84,4 +86,14 @@ body {
       // border: solid 1px red;
     }
   }
+
+
+}
+
+#footer {
+  background-color: $darkGrey;
+  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
 }

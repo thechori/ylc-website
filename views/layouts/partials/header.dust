@@ -7,7 +7,7 @@
       <li><a href='#'>conference</a></li>
     </ul>
     <div id='logo'>
-      <img id='logo-img' src='images/ylc-logo-sm.png' title='<3' width='100px' />
+      <img id='logo-img' src='images/ylc-logo-sm.png' title='<3' width='150px' />
     </div>
     <ul class='links right'>
       <li><a href='#'>partners</a></li>

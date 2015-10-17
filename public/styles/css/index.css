@@ -1,6 +1,6 @@
 body {
   padding: 100px 0 0 0;
-  background-color: #cccccc; }
+  background-color: #7D26CD; }
   body h2 {
     color: #ffd700; }
   body p {
@@ -27,13 +27,13 @@ body {
   #header_nav #logo {
     display: inline-block;
     position: relative;
-    bottom: 35px; }
+    bottom: 30px; }
   #header_nav .links {
     display: inline-block;
     width: 40%;
     padding: 10px 0px;
     position: relative;
-    bottom: 32px; }
+    bottom: 56px; }
     #header_nav .links li {
       list-style: none;
       display: inline-block;
@@ -45,5 +45,12 @@ body {
     #header_nav .links a:hover {
       text-decoration: none;
       color: #8a3bd2; }
+
+#footer {
+  background-color: #323232;
+  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 10px; }
 
 /*# sourceMappingURL=index.css.map */
