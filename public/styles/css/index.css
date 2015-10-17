@@ -1,5 +1,4 @@
 body {
-  padding: 100px 0 0 0;
   background-color: #7D26CD; }
   body h2 {
     color: #ffd700; }
@@ -12,37 +11,32 @@ body {
   padding: 20px 10px;
   border-radius: 20px; }
 
-#header_nav {
+#header {
   width: 100%;
-  height: 100px;
-  background-color: #7D26CD;
-  position: fixed;
-  top: 0;
-  left: 0; }
-  #header_nav #header_container {
-    height: 35px;
-    margin-top: 35px;
-    background-color: white;
-    text-align: center; }
-  #header_nav #logo {
-    display: inline-block;
+  height: 250px;
+  background-color: white; }
+  #header #logo_container {
     position: relative;
-    bottom: 30px; }
-  #header_nav .links {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0 0 15px; }
+    #header #logo_container #logo {
+      width: 150px; }
+  #header .links {
     display: inline-block;
     width: 40%;
     padding: 10px 0px;
     position: relative;
     bottom: 56px; }
-    #header_nav .links li {
+    #header .links li {
       list-style: none;
       display: inline-block;
       padding: 0 15px; }
-    #header_nav .links a {
+    #header .links a {
       color: #000080;
       font-size: 16px;
       font-weight: 600; }
-    #header_nav .links a:hover {
+    #header .links a:hover {
       text-decoration: none;
       color: #8a3bd2; }
 
