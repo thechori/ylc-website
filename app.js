@@ -17,6 +17,7 @@ app.set('view engine', 'dust');
 app.set('views', __dirname + "/views")
 app.use(express.static(__dirname + "/public", { redirect: false }));
 app.use('/bootstrap', express.static(__dirname + "/bower_components/bootstrap"));
+app.use('/jquery', express.static(__dirname + "/bower_components/jquery"));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -30,7 +31,7 @@ app.use(express.static(__dirname + '/public'));
 // set the home page route
 app.get('/', function(req, res) {
   // ejs render automatically looks in the views folder
-  res.render('layouts/main', {
+  res.render('pages/index', {
     title: 'home'
   });
 });

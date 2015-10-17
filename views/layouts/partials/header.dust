@@ -1,4 +1,18 @@
 <!-- header.dust -->
-<div class="container text-center">
-
+<div id='header_nav'>
+  <div id='header_container'>
+    <ul class='links left'>
+      <li><a href='#'>home</a></li>
+      <li><a href='#'>about</a></li>
+      <li><a href='#'>conference</a></li>
+    </ul>
+    <div id='logo'>
+      <img id='logo-img' src='images/ylc-logo-sm.png' title='<3' width='100px' />
+    </div>
+    <ul class='links right'>
+      <li><a href='#'>partners</a></li>
+      <li><a href='#'>gallery</a></li>
+      <li><a href='#'>contact</a></li>
+    </ul>
+  </div>
 </div>
