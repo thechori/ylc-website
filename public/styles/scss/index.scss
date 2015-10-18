@@ -91,3 +91,28 @@ body {
   text-align: left;
   padding: 10px;
 }
+
+#navbar_bottom {
+
+  background-color: $darkGrey;
+
+  #links {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+    padding: 0 40px;
+  }
+  a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  a:hover {
+    color: $ylcPurple;
+    text-decoration: none;
+  }
+}

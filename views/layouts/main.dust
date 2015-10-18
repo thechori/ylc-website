@@ -16,5 +16,8 @@
   <!-- footer -->
   {> "layouts/partials/footer" /}
 
+  <!-- bottom-fixed navbar -->
+  {> "layouts/partials/navbar_bottom" /}
+
 </body>
 </html>

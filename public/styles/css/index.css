@@ -47,4 +47,21 @@ body {
   text-align: left;
   padding: 10px; }
 
+#navbar_bottom {
+  background-color: #323232; }
+  #navbar_bottom #links {
+    padding-top: 10px;
+    text-align: center; }
+  #navbar_bottom li {
+    list-style: none;
+    display: inline;
+    padding: 0 40px; }
+  #navbar_bottom a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600; }
+  #navbar_bottom a:hover {
+    color: #7D26CD;
+    text-decoration: none; }
+
 /*# sourceMappingURL=index.css.map */
