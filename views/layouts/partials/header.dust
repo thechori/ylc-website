@@ -3,4 +3,12 @@
   <div id='logo_container'>
     <img id='logo' src='images/ylc-logo-sm.png' />
   </div>
+  <div id='banner'>
+    <ul>
+      <li><img src='images/carousel/small/01-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/02-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/03-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/04-sm.jpg' height='250px'/></li>
+    </ul>
+  </div>
 </div>
