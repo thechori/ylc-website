@@ -7,10 +7,10 @@ var express = require('express')
     , dustjs = require('dustjs-linkedin')
     , mongoose = require('mongoose');
 
-var app = express();
+var app = express()
 // set the port
-var port = process.env.PORT || 3000;
 
+var port = process.env.PORT || 3000;
 // assign the dust engine to the dust files
 app.engine('dust', cons.dust);
 app.set('view engine', 'dust');

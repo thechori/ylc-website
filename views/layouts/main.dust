@@ -15,8 +15,9 @@
   <!-- page content -->
   {+body/}
 
-  <!-- footer -->
-  {> "layouts/partials/footer" /}
+  {! footer !}
+  {! appears mid page without a lot of content  !}
+  {! {> "layouts/partials/footer" /} !}
 
   <!-- bottom-fixed navbar -->
   {> "layouts/partials/navbar_bottom" /}

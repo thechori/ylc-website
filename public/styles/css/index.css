@@ -1,6 +1,6 @@
 body {
   background-color: #7D26CD;
-  padding-bottom: 50px; }
+  padding-bottom: 52px; }
   body h2 {
     color: #ffd700; }
   body p {
@@ -29,6 +29,7 @@ body {
     vertical-align: top; }
     #header #logo_container #logo {
       width: 100%;
+      margin-left: 25px;
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
@@ -38,10 +39,10 @@ body {
     display: inline-block;
     overflow: hidden;
     margin: 0 auto;
-    text-align: center;
-    border: 1px solid green; }
+    text-align: center; }
     #header #banner li {
-      list-style: none; }
+      list-style: none;
+      padding-left: 20px; }
     #header #banner ul li {
       float: left; }
 

@@ -16,7 +16,7 @@ $medium_text: 16px;
 
 body {
   background-color: $ylcPurple;
-  padding-bottom: 50px;
+  padding-bottom: 52px;
 
   h2 {
     color: $gold;
@@ -55,6 +55,7 @@ body {
 
     #logo {
       width: 100%;
+      margin-left: 25px;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -68,10 +69,11 @@ body {
     overflow: hidden;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid green;
+    // border: 1px solid green;
 
     li {
       list-style: none;
+      padding-left: 20px;
     }
     ul li {
       float: left;
