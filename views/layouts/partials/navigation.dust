@@ -1,0 +1,11 @@
+<!-- navigation.dust -->
+<div id='navigation'>
+  <ul class='links'>
+    <li>home<li>
+    <li>about</li>
+    <li>conference</li>
+    <li>partners</li>
+    <li>gallery</li>
+    <li>contact</li>
+  </ul>
+</div>

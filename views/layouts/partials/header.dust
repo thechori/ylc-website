@@ -1,18 +1,14 @@
 <!-- header.dust -->
-<div id='header_nav'>
-  <div id='header_container'>
-    <ul class='links left'>
-      <li><a href='#'>home</a></li>
-      <li><a href='#'>about</a></li>
-      <li><a href='#'>conference</a></li>
-    </ul>
-    <div id='logo'>
-      <img id='logo-img' src='images/ylc-logo-sm.png' title='<3' width='100px' />
-    </div>
-    <ul class='links right'>
-      <li><a href='#'>partners</a></li>
-      <li><a href='#'>gallery</a></li>
-      <li><a href='#'>contact</a></li>
+<div id='header'>
+  <div id='logo_container'>
+    <img id='logo' src='images/ylc-logo-sm.png' />
+  </div>
+  <div id='banner'>
+    <ul>
+      <li><img src='images/carousel/small/01-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/02-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/03-sm.jpg' height='250px'/></li>
+      <li><img src='images/carousel/small/04-sm.jpg' height='250px'/></li>
     </ul>
   </div>
 </div>
