@@ -5,7 +5,8 @@ var express = require('express')
     , cons = require('consolidate')
     , bodyParser = require('body-parser')
     , dustjs = require('dustjs-linkedin')
-    , mongoose = require('mongoose');
+    , mongoose = require('mongoose')
+    , post = require('./server/controllers/PostController.js');
 
 var app = express()
 // set the port
@@ -47,38 +48,9 @@ db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function(callback) {
   console.log('db open!');
 
-  var PostSchema = mongoose.Schema({
-    createdAt: Date,
-    editedAt: Date,
-    deletedAt: Date,
-    isActive: Boolean,
-    author: String,
-    title: String,
-    description: String,
-    body: String,
-    tags: [String]
-  });
+  post.hello();
 
-  var Post = mongoose.model('Post', PostSchema);
 
-  // Create a new Post
-  var examplePost = new Post({
-    title: "My First Post!",
-    description: "This is my first post.",
-    body: "Lots and lots of text about something YLC did that blew everyone away. YLC is the best! Do you know why? Because we just are, son.",
-    author: "Ryan Tedoro",
-    createdAt: Date.now()
-  });
-
-  console.log("Title: " + examplePost.title);
-  console.log("Date.now(): " + examplePost.createdAt);
-
-  examplePost.save(function (err, examplePost) {
-    if (err)
-      console.error(err);
-
-    console.log('Successfully saved "'+ examplePost.title + '"');
-  });
 
 });
 
