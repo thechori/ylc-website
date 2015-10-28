@@ -1,0 +1,15 @@
+body {
+  background: #cc594a;
+}
+button {
+  background: #8bc5ff;
+  color: #6f3596;
+}
+div {
+  background: #6f3596;
+  width: 100%;
+}
+div p {
+  color: #b8cc24;
+  background: #cc594a;
+}
