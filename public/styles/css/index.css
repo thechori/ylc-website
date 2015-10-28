@@ -1,10 +1,16 @@
 body {
-  padding: 100px 0 0 0;
-  background-color: #7D26CD; }
+  background-color: #7D26CD;
+  padding-bottom: 52px; }
   body h2 {
     color: #ffd700; }
   body p {
     color: #ffffff; }
+
+.slideme {
+  max-width: 1000px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%; }
 
 .button {
   background-color: #0000e5;
@@ -12,39 +18,33 @@ body {
   padding: 20px 10px;
   border-radius: 20px; }
 
-#header_nav {
+#header {
   width: 100%;
-  height: 100px;
-  background-color: #7D26CD;
-  position: fixed;
-  top: 0;
-  left: 0; }
-  #header_nav #header_container {
-    height: 35px;
-    margin-top: 35px;
-    background-color: white;
+  height: 250px;
+  background-color: white; }
+  #header #logo_container {
+    display: inline-block;
+    width: 15%;
+    height: 250px;
+    vertical-align: top; }
+    #header #logo_container #logo {
+      width: 100%;
+      margin-left: 25px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+  #header #banner {
+    width: 85%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
     text-align: center; }
-  #header_nav #logo {
-    display: inline-block;
-    position: relative;
-    bottom: 30px; }
-  #header_nav .links {
-    display: inline-block;
-    width: 40%;
-    padding: 10px 0px;
-    position: relative;
-    bottom: 56px; }
-    #header_nav .links li {
+    #header #banner li {
       list-style: none;
-      display: inline-block;
-      padding: 0 15px; }
-    #header_nav .links a {
-      color: #000080;
-      font-size: 16px;
-      font-weight: 600; }
-    #header_nav .links a:hover {
-      text-decoration: none;
-      color: #8a3bd2; }
+      padding-left: 20px; }
+    #header #banner ul li {
+      float: left; }
 
 #footer {
   background-color: #323232;
@@ -52,5 +52,22 @@ body {
   width: 100%;
   text-align: left;
   padding: 10px; }
+
+#navbar_bottom {
+  background-color: #323232; }
+  #navbar_bottom #links {
+    padding-top: 10px;
+    text-align: center; }
+  #navbar_bottom li {
+    list-style: none;
+    display: inline;
+    padding: 0 40px; }
+  #navbar_bottom a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600; }
+  #navbar_bottom a:hover {
+    color: #7D26CD;
+    text-decoration: none; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,11 +1,7 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
+# ylc-website #
 
 * Quick summary
-The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community. 
+The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community.
 
 * 0.0.1
 
@@ -14,8 +10,14 @@ The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordp
 ### How do I get set up? ###
 
 * Summary of set up
+<code>
+  console.log("This is a test of the <code> tag.");
+</code>
 
 * Configuration
+<pre>
+  console.log("This is a test of the <pre> tag.");
+</pre>
 
 * Dependencies
 

@@ -1,41 +1,25 @@
+// Initialize slideme
+// $(function() {
+//   $('#carousel').slideme({
+//       arrows: true,
+//       autoslide: true,
+//       pagination: "numbers",
+//       resizable: {
+//         width: 990,
+//         height: 450,
+//       },
+//       loop: true,
+//       autoslideHoverStop: true
+//   });
+//
+//   console.log('slideme initialized');
+// });
+
+// Initialize slick
 $(function() {
-    $('#header_nav').data('size','big');
-});
+  $('#banner').slick({
+    autoplay: true
+  });
 
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 0) {
-
-    if ($('#header_nav').data('size') == 'big') {
-
-      $('#header_nav').data('size','small');
-
-      // Animate the header_nav bar
-      $('#header_nav').animate({
-        height:'40px'
-      },600);
-
-      // Animate the image
-      $('#logo-img').animate({
-        width: "40px",
-        height: "40px"
-      });
-    }
-  }
-  else {
-    if ($('#header_nav').data('size') == 'small') {
-
-      $('#header_nav').data('size','big');
-
-      // Animate the header_nav bar
-      $('#header_nav').animate({
-        height:'100px'
-      },600);
-
-      // Animate the image
-      $('#logo-img').animate({
-        width: "100px",
-        height: "100px"
-      });
-    }
-  }
+  console.log('slick initialized');
 });

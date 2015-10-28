@@ -1,10 +1,12 @@
 <html>
 <head>
   <title>{title}</title>
+  <!-- Styles -->
   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="slick/slick.css" />
+  <link rel="stylesheet" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="styles/css/index.css" />
-  <script src="jquery/dist/jquery.js"></script>
-  <script src="scripts/main.js"></script>
+  <!-- <link rel="stylesheet" href="styles/css/slideme.css" /> -->
 </head>
 <body>
   <!-- header -->
@@ -13,8 +15,19 @@
   <!-- page content -->
   {+body/}
 
-  <!-- footer -->
-  {> "layouts/partials/footer" /}
+  {! footer !}
+  {! appears mid page without a lot of content  !}
+  {! {> "layouts/partials/footer" /} !}
+
+  <!-- bottom-fixed navbar -->
+  {> "layouts/partials/navbar_bottom" /}
+
+  <!-- Scripts -->
+  <script src="jquery/dist/jquery.js"></script>
+  <!-- <script src="scripts/jquery.slideme2.js"></script> -->
+  <!-- <script src="scripts /unslider.min.js"></script> -->
+  <script src="slick/slick.min.js"></script>
+  <script src="scripts/main.js"></script>
 
 </body>
 </html>
