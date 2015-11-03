@@ -1,9 +1,7 @@
 // PostController.js
 
 var mongoose = require('mongoose');
-var db = require('./db.js');
-var test = require('./testy.js');
-
+// var db = require('./db.js'); // why doesn't this work?
 
 module.exports = {
 

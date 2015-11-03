@@ -42,6 +42,14 @@ app.get('/about', function(req, res) {
     title: 'about'
   });
 });
+app.get('/newpost', function(req, res) {
+  res.render('pages/new_post', {
+    title: 'newpost'
+  })
+});
+app.post('/newpost', function(req, res) {
+  
+});
 
 // Connect to DB
 mongoose.connect('mongodb://localhost/ylc-website');
