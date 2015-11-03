@@ -20,4 +20,4 @@ var PostSchema = mongoose.Schema({
 // Define models
 var Post = mongoose.model('Post', PostSchema);
 
-// module.exports = Post;
+module.exports = Post;

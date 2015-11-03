@@ -8,6 +8,8 @@ var express = require('express')
     , mongoose = require('mongoose')
     , post = require('./server/controllers/PostController.js');
 
+  var hello = require('./testy.js');
+
 var app = express()
 // set the port
 

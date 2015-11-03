@@ -2,6 +2,8 @@
 
 var mongoose = require('mongoose');
 var db = require('./db.js');
+var test = require('./testy.js');
+
 
 module.exports = {
 
