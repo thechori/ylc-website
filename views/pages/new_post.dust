@@ -8,9 +8,9 @@
 
   <form id='new-post'>
     <input type='text' id='title' name='title' placeholder="Title"/><br>
-    <input type='text' id='description' name='description'  placeholder="Description"/><br>
     <textarea id='body' name='body' placeholder="Body"></textarea><br>
     <input type='text' id='author' name='author'  placeholder="Author"/><br>
+    <input type='submit' title='Create new post' />
   </form>
 
 </div>

@@ -1,14 +1,16 @@
-var express = require('express')
-    , http = require('http')
-    , fs = require('fs')
-    , path = require('path')
-    , cons = require('consolidate')
-    , bodyParser = require('body-parser')
-    , dustjs = require('dustjs-linkedin')
-    , mongoose = require('mongoose')
-    , post = require('./server/controllers/PostController.js');
+var express = require('express'),
+    http = require('http'),
+    fs = require('fs'),
+    path = require('path'),
+    cons = require('consolidate'),
+    bodyParser = require('body-parser'),
+    dustjs = require('dustjs-linkedin'),
+    mongoose = require('mongoose'),
 
-  var hello = require('./testy.js');
+    // my shit
+    // post = require('./server/controllers/PostController.js'),
+    post = require('./server/models/post.js')
+
 
 var app = express()
 // set the port
@@ -48,7 +50,7 @@ app.get('/newpost', function(req, res) {
   })
 });
 app.post('/newpost', function(req, res) {
-  
+
 });
 
 // Connect to DB
@@ -58,7 +60,6 @@ db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function(callback) {
   console.log('db open!');
 
-  post.hello();
 
 
 

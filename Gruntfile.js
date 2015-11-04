@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
 
       // when this task is run, lint the Gruntfile and all js files in src
-      build: ['Gruntfile.js', 'public/scripts/*.js']
+      build: ['Gruntfile.js', 'public/scripts/*.js', 'server/**/*.js']
     },
 
     // compile less stylesheets to css
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 
       // for scripts, run jshint
       scripts: {
-        files: ['public/scripts/*.js'],
+        files: ['public/scripts/*.js', 'server/**/*.js'],
         tasks: ['jshint']
       }
     }

@@ -72,10 +72,10 @@ body {
 
 /* new_post.dust */
 #new-post input {
-  width: 300px;
+  width: 400px;
   margin: 10px 0px; }
 #new-post #body {
-  width: 300px;
+  width: 400px;
   height: 200px; }
 
 /*# sourceMappingURL=index.css.map */
