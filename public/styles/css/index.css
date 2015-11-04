@@ -70,4 +70,12 @@ body {
     color: #7D26CD;
     text-decoration: none; }
 
+/* new_post.dust */
+#new-post input {
+  width: 300px;
+  margin: 10px 0px; }
+#new-post #body {
+  width: 300px;
+  height: 200px; }
+
 /*# sourceMappingURL=index.css.map */
