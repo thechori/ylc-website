@@ -9,16 +9,11 @@ var express = require('express'),
     mongoose = require('mongoose'),
     methodOverride = require('method-override'),
 
-    // my shit
-    // post = require('./server/controllers/PostController.js'),
-    post = require('./server/models/post.js');
+    post = require('./server/models/post.js'),
 
+    app = express();
+    port = process.env.PORT || 3000;
 
-var app = express();
-
-// set the port
-var port = process.env.PORT || 3000;
-// assign the dust engine to the dust files
 app.engine('dust', cons.dust);
 app.set('view engine', 'dust');
 app.set('views', __dirname + "/views")
@@ -31,11 +26,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-
 // tell express to look in the public dir for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
-// new routes
 // copy and pasted from method-override, necessary
 // using use will make sure that every req that hits this controller
 // will pass through these controllers
@@ -58,12 +51,6 @@ router.route('/')
       if (err) {
         return console.error(err);
       } else {
-        // respond to both HTML and JSON. JSON responses require 'Accept: appl
-        // ication/json;' in the Request Header
-        // res.format({
-          // html response will render the index.dust file in the /views folder
-          //
-        // })
         console.log(posts);
       }
     });
@@ -94,27 +81,6 @@ router.route('/newpost')
 // register routes
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
-
-// old routes
-// app.get('/', function(req, res) {
-//   res.render('pages/index', {
-//     title: 'home'
-//   });
-// });
-// app.get('/about', function(req, res) {
-//   res.render('pages/about', {
-//     title: 'about'
-//   });
-// });
-// app.get('/newpost', function(req, res) {
-//   res.render('pages/new_post', {
-//     title: 'newpost'
-//   })
-// });
-// app.post('/newpost', function(req, res) {
-//
-// });
-
 // Connect to DB
 mongoose.connect('mongodb://localhost/ylc-website');
 var db = mongoose.connection;
@@ -125,7 +91,7 @@ db.once('open', function(callback) {
 
 
 
-// tell server which port to listen on
+// fire the bitch up
 app.listen(port, function() {
   console.log('listening on ' + port);
 });
