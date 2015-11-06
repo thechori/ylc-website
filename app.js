@@ -52,7 +52,7 @@ router.use(methodOverride(function(req, res) {
 router.route('/')
   // get all posts
   .get(function(req, res, next) {
-    console.log('GET "/"');
+    console.log('GET "/" !!!!!');
     // retrieve all posts from mongod
     mongoose.model('Post').find({}, function(err, posts) {
       if (err) {
@@ -67,9 +67,32 @@ router.route('/')
         console.log(posts);
       }
     });
-  });
+    res.render('pages/index', {
+      title: 'YLC Home Page'
+    })
+  })
+;
 
-app.use('/', router);
+// Behavior:
+// When you go to /newpost, you are shown the form to input a new
+// post
+router.route('/newpost')
+  // new post
+  .get(function(req, res, next) {
+    res.render('pages/new_post', {
+      title: 'New Post'
+    });
+  })
+  // grab the data from the form and save it to the db
+  .post(function(req, res, next) {
+    console.log("POST('/')");
+    console.log(req.body);
+  })
+;
+
+
+// register routes
+app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
 
 // old routes
