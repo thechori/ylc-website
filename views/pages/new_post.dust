@@ -1,12 +1,15 @@
 <!-- include layout -->
 {> "layouts/main" /}
+<script src="scripts/pages/newPost.js"></script>
 
 <!-- new_post.dust -->
 {<body}
 <div class='container text-center'>
   <h2>Create a New Post Ya Filthy Animal</h2>
 
-  <form id='new-post' action='/newpost'>
+  <input type='text' id='test-field' />
+
+  <form id='new-post' action='/newpost' method='post'>
     <input type='text' id='title' name='title' placeholder="Title"/><br>
     <textarea id='body' name='body' placeholder="Body"></textarea><br>
     <input type='text' id='author' name='author'  placeholder="Author"/><br>

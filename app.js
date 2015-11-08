@@ -46,17 +46,19 @@ router.route('/')
   // get all posts
   .get(function(req, res, next) {
     console.log('GET "/" !!!!!');
+
     // retrieve all posts from mongod
     mongoose.model('Post').find({}, function(err, posts) {
       if (err) {
         return console.error(err);
       } else {
-        console.log(posts);
+        console.log(posts[0]);
       }
     });
+
     res.render('pages/index', {
       title: 'YLC Home Page'
-    })
+    });
   })
 ;
 
