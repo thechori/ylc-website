@@ -5,7 +5,10 @@ var Schema = mongoose.Schema;
 
 // Define Schemas
 var PostSchema = mongoose.Schema({
-  createdAt: Date,
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
   editedAt: Date,
   deletedAt: Date,
   isActive: Boolean,

@@ -45,7 +45,7 @@ router.use(methodOverride(function(req, res) {
 router.route('/')
   // get all posts
   .get(function(req, res, next) {
-    console.log('GET "/" !!!!!');
+    console.log('GET "/"');
 
     // retrieve all posts from mongod
     mongoose.model('Post').find({}, function(err, posts) {
@@ -62,9 +62,6 @@ router.route('/')
   })
 ;
 
-// Behavior:
-// When you go to /newpost, you are shown the form to input a new
-// post
 router.route('/newpost')
   // new post
   .get(function(req, res, next) {
