@@ -11,7 +11,6 @@ var PostSchema = mongoose.Schema({
   isActive: Boolean,
   author: String,
   title: String,
-  description: String,
   body: String,
   tags: [String]
 });

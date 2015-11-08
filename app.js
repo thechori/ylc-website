@@ -76,6 +76,20 @@ router.route('/newpost')
   .post(function(req, res, next) {
     console.log("POST('/')");
     console.log(req.body);
+
+    // save new post to db
+    var newpost = new post({
+      title: req.body.title,
+      body: req.body.body,
+      author: req.body.author
+    });
+    newpost.save(function(err) {
+      if (err)
+        console.error(err);
+      console.log("Created new post!");
+      console.log(newpost);
+      res.redirect('/');
+    });
   })
 ;
 
