@@ -56,14 +56,13 @@ router.route('/')
       .limit(5)
       .exec(function(err, posts) {
         console.log(posts);
+
+        res.render('pages/index', {
+          title: 'YLC Home Page',
+          posts: posts
+        });
       })
     ;
-
-
-
-    res.render('pages/index', {
-      title: 'YLC Home Page'
-    });
   })
 ;
 

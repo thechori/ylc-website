@@ -5,24 +5,22 @@
 {<body}
 <div class='container text-center'>
   <h2>Welcome to YLC!</h2>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <h2>Welcome to YLC!</h2>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <h2>Welcome to YLC!</h2>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
-  <p>ylc ylc ylc ylc</p>
 
-  <!-- include the first 5 articles -->
+<ul>
+{#posts}
+  <li>
+    <h3>{.title}</h3>
+    <br>
+    {.body}
+    <br>
+    {.author}
+    <br>
+    {.createdAt}
+  </li>
+{/posts}
+</ul>
 
-  <!-- end of articles -->
+
 
 </div>
 {/body}

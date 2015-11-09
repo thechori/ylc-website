@@ -1,6 +1,9 @@
 body {
   background-color: #7D26CD;
-  padding-bottom: 52px; }
+  padding-bottom: 52px;
+  color: #ffffff; }
+  body h3 {
+    color: #9C2A00; }
   body h2 {
     color: #ffd700; }
   body p {

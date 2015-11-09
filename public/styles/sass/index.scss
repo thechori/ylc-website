@@ -17,6 +17,11 @@ $medium_text: 16px;
 body {
   background-color: $ylcPurple;
   padding-bottom: 52px;
+  color: $white;
+
+  h3 {
+    color: $fireRed;
+  }
 
   h2 {
     color: $gold;
