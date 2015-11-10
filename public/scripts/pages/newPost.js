@@ -20,5 +20,5 @@ function createNewPostAjax() {
 // Listen for events
 $('#new-post').submit(function(evt) {
   console.log('creating new post!');
-  createNewPostAjax();
+  //createNewPostAjax();
 });

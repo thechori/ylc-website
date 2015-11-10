@@ -6,21 +6,16 @@
 <div class='container text-center'>
   <h2>Welcome to YLC!</h2>
 
-<ul>
-{#posts}
-  <li>
-    <h3>{.title}</h3>
-    <br>
-    {.body}
-    <br>
-    {.author}
-    <br>
-    {.createdAt}
-  </li>
-{/posts}
-</ul>
-
-
+  <ul>
+  {#posts}
+    <li>
+      <h3>{.title}</h3>
+      {.body}<br>
+      {.author}<br>
+      {.createdAt}
+    </li>
+  {/posts}
+  </ul>
 
 </div>
 {/body}
