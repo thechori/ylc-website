@@ -8,11 +8,10 @@ var express = require('express'),
     dustjs = require('dustjs-linkedin'),
     mongoose = require('mongoose'),
     methodOverride = require('method-override'),
-    swal = require('sweetalert'),
 
     post = require('./server/models/post.js'),
 
-    app = express();
+    app = express(),
     port = process.env.PORT || 3000;
 
 app.engine('dust', cons.dust);
@@ -89,24 +88,9 @@ router.route('/newpost')
     newpost.save(function(err) {
       if (err) {
         console.error(err);
-        swal({
-          title: "Error",
-          text: "There was a problem when attempting to submit your post",
-          type: "error"
-        });
       }
       console.log("Created new post!");
       console.log(newpost);
-      swal({
-        title: "Success!",
-        text: "Your post has been created",
-        type: "success",
-        confirmButtonText: "Okay",
-        timer: null
-      },
-      function() {
-        res.redirect('/');
-      });
     });
   })
 ;
