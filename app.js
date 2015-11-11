@@ -8,6 +8,7 @@ var express = require('express'),
     dustjs = require('dustjs-linkedin'),
     mongoose = require('mongoose'),
     methodOverride = require('method-override'),
+    swal = require('sweetalert'),
 
     post = require('./server/models/post.js'),
 
@@ -20,6 +21,7 @@ app.set('views', __dirname + "/views")
 app.use(express.static(__dirname + "/public", { redirect: false }));
 app.use('/bootstrap', express.static(__dirname + "/bower_components/bootstrap"));
 app.use('/jquery', express.static(__dirname + "/bower_components/jquery"));
+app.use('/sweetalert', express.static(__dirname + '/node_modules/sweetalert'));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -85,11 +87,26 @@ router.route('/newpost')
       author: req.body.author
     });
     newpost.save(function(err) {
-      if (err)
+      if (err) {
         console.error(err);
+        swal({
+          title: "Error",
+          text: "There was a problem when attempting to submit your post",
+          type: "error"
+        });
+      }
       console.log("Created new post!");
       console.log(newpost);
-      res.redirect('/');
+      swal({
+        title: "Success!",
+        text: "Your post has been created",
+        type: "success",
+        confirmButtonText: "Okay",
+        timer: null
+      },
+      function() {
+        res.redirect('/');
+      });
     });
   })
 ;
