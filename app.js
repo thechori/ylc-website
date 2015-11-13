@@ -100,10 +100,12 @@ router.route('/newpost')
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
 // Connect to DB
-if (port !== 3000) {
-  var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
-} else {
+if (port === 3000) {
+  console.log("Connecting to local DB...");
   var dbConnectionString = "mongodb://localhost/ylc-website";
+} else {
+  console.log("Connecting to MongoLab...");
+  var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
 }
 mongoose.connect(dbConnectionString);
 var db = mongoose.connection;
