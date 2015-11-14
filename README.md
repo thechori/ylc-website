@@ -54,13 +54,7 @@ git push heroku master
 
 Where "heroku" is the git remote URL that points to the Heroku server, and "master" is your local code branch
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+### Where do I go for help? ###
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Ryan Teodoro (admin@ylc.net or ryan.h.teodoro@gmail.com)
