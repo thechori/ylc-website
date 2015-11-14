@@ -21,7 +21,7 @@
   {! {> "layouts/partials/footer" /} !}
 
   <!-- bottom-fixed navbar -->
-  {> "layouts/partials/navbar_bottom" /}
+  {> "layouts/partials/navbarBottom" /}
 
   <!-- Scripts -->
   <script src="jquery/dist/jquery.js"></script>

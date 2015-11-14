@@ -1,5 +1,5 @@
-<!-- navbar_bottom.dust -->
-<nav id='navbar_bottom' class='navbar navbar-default navbar-fixed-bottom'>
+<!-- navbarBottom.dust -->
+<nav id='navbarBottom' class='navbar navbar-default navbar-fixed-bottom'>
   <div class='container'>
     <ul id='links'>
       <li><a href='/'>home</a></li>
