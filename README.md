@@ -13,7 +13,7 @@ The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordp
 * Summary of set up
 
 <code>
-console.log("This is a test of the <code> tag.");
+console.log("This is a test of the code tag.");
 </code>
 
 * Configuration
