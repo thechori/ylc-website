@@ -1,6 +1,7 @@
 # ylc-website #
 
 * Quick summary
+
 The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community.
 
 * 0.0.1
@@ -17,9 +18,9 @@ console.log("This is a test of the <code> tag.");
 
 * Configuration
 
--Source code is stored and tracked on GitHub @ ____ (Git)
--Hosted and deployed on Heroku @ ylc-webste.herokuapp.com (Node.js)
--Database hosted on MongoLab server (MongoDB)
++ Source code is stored and tracked on GitHub @ ____ (Git)
++ Hosted and deployed on Heroku @ ylc-webste.herokuapp.com (Node.js)
++ Database hosted on MongoLab server (MongoDB)
 
 <pre>
   console.log("This is a test of the pre tag.");
