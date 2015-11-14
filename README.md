@@ -22,7 +22,7 @@ console.log("This is a test of the <code> tag.");
 -Database hosted on MongoLab server (MongoDB)
 
 <pre>
-  console.log("This is a test of the <pre> tag.");
+  console.log("This is a test of the pre tag.");
 </pre>
 
 Heroku (Node Web Server)
