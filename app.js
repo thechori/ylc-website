@@ -44,7 +44,6 @@ router.use(methodOverride(function(req, res) {
 }));
 
 router.route('/')
-  // get all posts
   .get(function(req, res, next) {
     console.log('GET "/"');
 
@@ -56,6 +55,9 @@ router.route('/')
       })
       .limit(5)
       .exec(function(err, posts) {
+
+        console.log(posts);
+
         res.render('pages/index', {
           title: 'YLC Home Page',
           posts: posts
@@ -97,16 +99,15 @@ router.route('/newpost')
 // register routes
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
-// Connect to DB
-// if (port === 3000) {
-//   console.log("Connecting to local DB...");
-//   var dbConnectionString = "mongodb://127.0.0.1:27017/ylc-website";
-// } else {
-//   console.log("Connecting to MongoLab...");
-//   var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
-// }
+Connect to DB
+if (port === 3000) {
+  console.log("Connecting to local DB...");
+  var dbConnectionString = 'mongodb://127.0.0.1:27017/ylc-website';
+} else {
+  console.log("Connecting to MongoLab...");
+  var dbConnectionString = 'mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website';
+}
 
-var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
 
 mongoose.connect(dbConnectionString);
 var db = mongoose.connection;
