@@ -10,7 +10,7 @@
   <input type='text' id='test-field' hidden/>
 
   <!--<form id='new-post' action='/newpost' method='post'>-->
-    <form id='new-post'>
+  <form id='new-post'>
     <input type='text' id='title' name='title' placeholder="Title"/><br>
     <textarea id='body' name='body' placeholder="Body"></textarea><br>
     <input type='text' id='author' name='author'  placeholder="Author"/><br>

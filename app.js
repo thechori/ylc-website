@@ -48,7 +48,7 @@ router.route('/')
   .get(function(req, res, next) {
     console.log('GET "/"');
 
-    // retrieve all posts from mongod
+    // retrieve 5 most recent posts
     mongoose.model('Post')
       .find()
       .sort({
@@ -56,8 +56,6 @@ router.route('/')
       })
       .limit(5)
       .exec(function(err, posts) {
-        console.log(posts);
-
         res.render('pages/index', {
           title: 'YLC Home Page',
           posts: posts
