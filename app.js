@@ -99,7 +99,7 @@ router.route('/newpost')
 // register routes
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
-Connect to DB
+// Connect to DB
 if (port === 3000) {
   console.log("Connecting to local DB...");
   var dbConnectionString = 'mongodb://127.0.0.1:27017/ylc-website';
