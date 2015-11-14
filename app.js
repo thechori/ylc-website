@@ -98,13 +98,16 @@ router.route('/newpost')
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 
 // Connect to DB
-if (port === 3000) {
-  console.log("Connecting to local DB...");
-  var dbConnectionString = "mongodb://127.0.0.1:27017/ylc-website";
-} else {
-  console.log("Connecting to MongoLab...");
-  var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
-}
+// if (port === 3000) {
+//   console.log("Connecting to local DB...");
+//   var dbConnectionString = "mongodb://127.0.0.1:27017/ylc-website";
+// } else {
+//   console.log("Connecting to MongoLab...");
+//   var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
+// }
+
+var dbConnectionString = "mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website";
+
 mongoose.connect(dbConnectionString);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
