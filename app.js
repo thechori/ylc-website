@@ -18,8 +18,10 @@ app.engine('dust', cons.dust);
 app.set('view engine', 'dust');
 app.set('views', __dirname + "/views")
 app.use(express.static(__dirname + "/public", { redirect: false }));
-app.use('/bootstrap', express.static(__dirname + "/bower_components/bootstrap"));
-app.use('/jquery', express.static(__dirname + "/bower_components/jquery"));
+//app.use('/bootstrap', express.static(__dirname + "/bower_components/bootstrap"));
+//app.use('/jquery', express.static(__dirname + "/bower_components/jquery"));
+app.use('/bootstrap', express.static(__dirname + "/node_modules/bootstrap"));
+app.use('/jquery', express.static(__dirname + "/node_modules/jquery"));
 app.use('/sweetalert', express.static(__dirname + '/node_modules/sweetalert'));
 
 // parse application/x-www-form-urlencoded
@@ -107,7 +109,6 @@ if (port === 3000) {
   console.log("Connecting to MongoLab...");
   var dbConnectionString = 'mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website';
 }
-
 
 mongoose.connect(dbConnectionString);
 var db = mongoose.connection;
