@@ -1,15 +1,19 @@
 <!-- header.dust -->
-<div id='header'>
-  <div id='logo_container'>
-    <!--<img id='logo' src='images/ylc-logo-sm.png' />-->
+<div id='header' class='container'>
+
+  <div id='topnav' class='container'>
+    <ul class=''>
+      <li id='navabout'>
+        <a href='/about'>About</a>
+      </li>
+    </ul>
+    students | mentors | parents | volunteers | partners | donate
+  </div>
+  <div id='midnav'>
     <img id='logo' src='https://s3.amazonaws.com/ylc-website/images/ylc-logo-green.png' />
   </div>
-  <div id='banner'>
-    <ul>
-      <li><img src='images/carousel/small/01-sm.jpg' height='250px'/></li>
-      <li><img src='images/carousel/small/02-sm.jpg' height='250px'/></li>
-      <li><img src='images/carousel/small/03-sm.jpg' height='250px'/></li>
-      <li><img src='images/carousel/small/04-sm.jpg' height='250px'/></li>
-    </ul>
+  <div id='mainnav'>
+    home | about | conference | gallery | contact
   </div>
+
 </div>

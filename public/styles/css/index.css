@@ -1,13 +1,24 @@
-body {
+#header #topnav {
+  background-color: #333333;
+  color: #d3d1d1;
+  text-align: right; }
+#header #midnav {
   background-color: #7D26CD;
+  text-align: center; }
+#header #mainnav {
+  background-color: #7D26CD;
+  text-align: center; }
+
+body {
+  background-color: #ffffff;
   padding-bottom: 52px;
   color: #ffffff; }
   body h3 {
-    color: #323232; }
+    color: #333333; }
   body h2 {
     color: #ffd700; }
   body p {
-    color: #ffffff; }
+    color: #333333; }
   body li {
     list-style: none; }
 
@@ -23,43 +34,15 @@ body {
   padding: 20px 10px;
   border-radius: 20px; }
 
-#header {
-  width: 100%;
-  height: 250px;
-  background-color: white; }
-  #header #logo_container {
-    display: inline-block;
-    width: 15%;
-    height: 250px;
-    vertical-align: top; }
-    #header #logo_container #logo {
-      width: 100%;
-      margin-left: 25px;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%); }
-  #header #banner {
-    width: 85%;
-    height: 100%;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0 auto;
-    text-align: center; }
-    #header #banner li {
-      list-style: none;
-      padding-left: 20px; }
-    #header #banner ul li {
-      float: left; }
-
 #footer {
-  background-color: #323232;
+  background-color: #333333;
   color: white;
   width: 100%;
   text-align: left;
   padding: 10px; }
 
 #navbarBottom {
-  background-color: #323232; }
+  background-color: #333333; }
   #navbarBottom #links {
     padding-top: 10px;
     text-align: center; }
@@ -77,13 +60,13 @@ body {
 
 /* new_post.dust */
 #new-post {
-  color: #000000; }
+  color: #333333; }
   #new-post input {
-    color: #000000;
+    color: #333333;
     width: 400px;
     margin: 10px 0px; }
   #new-post #body {
-    color: #000000;
+    color: #333333;
     width: 400px;
     height: 200px; }
 
