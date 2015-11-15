@@ -2,6 +2,7 @@
 <nav id='navbarBottom' class='navbar navbar-default navbar-fixed-bottom'>
   <div class='container'>
     <ul id='links'>
+      <li><a href='/newpost' style='color: green'>new post</a></li>
       <li><a href='/'>home</a></li>
       <li><a href='/about'>about</a></li>
       <li><a href='#'>conference</a></li>

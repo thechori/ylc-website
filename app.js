@@ -11,6 +11,12 @@ var express = require('express'),
 
     post = require('./server/models/post.js'),
 
+    // routes
+    index = require('./routes/index.js'),
+    about = require('./routes/about.js'),
+    //newpost = require('./routes/newpost.js'), TODO: Implement this
+
+    // app
     app = express(),
     port = process.env.PORT || 3000;
 
@@ -18,8 +24,6 @@ app.engine('dust', cons.dust);
 app.set('view engine', 'dust');
 app.set('views', __dirname + "/views")
 app.use(express.static(__dirname + "/public", { redirect: false }));
-//app.use('/bootstrap', express.static(__dirname + "/bower_components/bootstrap"));
-//app.use('/jquery', express.static(__dirname + "/bower_components/jquery"));
 app.use('/bootstrap', express.static(__dirname + "/node_modules/bootstrap"));
 app.use('/jquery', express.static(__dirname + "/node_modules/jquery"));
 app.use('/sweetalert', express.static(__dirname + '/node_modules/sweetalert'));
@@ -72,7 +76,7 @@ router.route('/')
 router.route('/newpost')
   // new post
   .get(function(req, res, next) {
-    res.render('pages/new_post', {
+    res.render('pages/newPost', {
       title: 'New Post'
     });
   })
@@ -100,6 +104,10 @@ router.route('/newpost')
 
 // register routes
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
+app.use(index);
+app.use(about);
+// app.use(newpost); TODO: Implement this
+
 
 // Connect to DB
 if (port === 3000) {
