@@ -8,38 +8,47 @@
     float: right;
     margin: 0; }
     #header #topnav ul li {
-      display: inline-block; }
+      display: inline-block;
+      height: 100%; }
       #header #topnav ul li a {
+        font-size: .75em;
         color: #d3d1d1;
-        height: 1.125em;
-        padding: .75em;
-        line-height: 1.25em;
-        position: relative;
-        bottom: -1px;
-        transition: all .3s ease-in-out;
-        font-size: 1em; }
+        height: 100%;
+        padding: 1em;
+        display: block;
+        transition: all .3s ease-in-out; }
       #header #topnav ul li a:hover {
         text-decoration: none;
         background-color: #191919; }
 #header #midnav {
   background-color: #7D26CD;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   #header #midnav #logo {
     padding: 2em; }
 #header #mainnav {
-  background-color: #7D26CD;
+  height: 3em;
   text-align: center;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background-color: #7D26CD; }
   #header #mainnav ul {
-    display: inline-block; }
+    height: 100%;
+    display: inline-block;
+    margin: 0; }
     #header #mainnav ul li {
-      display: inline-block; }
+      display: inline-block;
+      height: 100%; }
       #header #mainnav ul li a {
-        position: relative;
-        background-color: orange;
+        font-size: 1.15em;
         color: white;
-        padding: 1em 2em;
-        line-height: 1.25em; }
+        height: 100%;
+        padding: .75em 2.5em;
+        display: block;
+        transition: all .3s ease-in-out; }
+      #header #mainnav ul li a:hover {
+        background-color: #ffffff;
+        color: #7D26CD;
+        text-decoration: none; }
 
 body {
   background-color: #ffffff;

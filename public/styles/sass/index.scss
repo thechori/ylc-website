@@ -29,16 +29,18 @@ $medium_text: 16px;
 
       li {
         display: inline-block;
+        height: 100%;
 
         a {
+          //font-family: "fire-sans-2";
+
+          font-size: .75em;
           color: $lightGrey;
-          height: 1.125em;
-          padding: .75em;
-          line-height: 1.25em;
-          position: relative;
-          bottom: -1px;
+          height: 100%;
+          padding: 1em;
+          display: block;
           transition: all .3s ease-in-out;
-          font-size: 1em;
+
         }
         a:hover {
           text-decoration: none;
@@ -50,27 +52,37 @@ $medium_text: 16px;
   #midnav {
     background-color: $ylcPurple;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     #logo {
       padding: 2em;
     }
   }
   #mainnav {
-    background-color: $ylcPurple;
+    height: 3em;
     text-align: center;
     vertical-align: baseline;
-
+    background-color: $ylcPurple;
 
     ul {
+      height: 100%;
       display: inline-block;
+      margin: 0;
       li {
         display: inline-block;
+        height: 100%;
         a {
-          position: relative;
-          background-color: orange;
+          font-size: 1.15em;
           color: white;
-          padding: 1em 2em;
-          line-height: 1.25em
+          height: 100%;
+          padding: .75em 2.5em;
+          display: block;
+          transition: all .3s ease-in-out;
+        }
+        a:hover {
+          background-color: #ffffff;
+          color: $ylcPurple;
+          text-decoration: none;
         }
       }
     }

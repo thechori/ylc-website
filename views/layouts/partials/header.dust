@@ -3,9 +3,6 @@
 
   <div id='topnav'>
     <ul class='toplinks'>
-      <li id='navabout'>
-        <a href='/about'>ABOUT</a>
-      </li>
       <li id='navmentors'>
         <a href='/mentor'>MENTORS</a>
       </li>
@@ -19,7 +16,7 @@
         <a href='/partner'>PARTNERS</a>
       </li>
       <li id='navdonate'>
-        <a href='/donate'>DONATE</a>
+        <a href='/donate' class='donate-link'>DONATE</a>
       </li>
     </ul>
   </div>
