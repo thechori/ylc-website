@@ -1,18 +1,50 @@
 #header #topnav {
+  width: 100%;
   background-color: #333333;
-  color: #d3d1d1;
-  text-align: right; }
+  height: 40px; }
+  #header #topnav ul {
+    height: 100%;
+    text-align: right;
+    float: right;
+    margin: 0; }
+    #header #topnav ul li {
+      display: inline-block; }
+      #header #topnav ul li a {
+        color: #d3d1d1;
+        height: 1.125em;
+        padding: .75em;
+        line-height: 1.25em;
+        position: relative;
+        bottom: -1px;
+        transition: all .3s ease-in-out;
+        font-size: 1em; }
+      #header #topnav ul li a:hover {
+        text-decoration: none;
+        background-color: #191919; }
 #header #midnav {
   background-color: #7D26CD;
   text-align: center; }
+  #header #midnav #logo {
+    padding: 2em; }
 #header #mainnav {
   background-color: #7D26CD;
-  text-align: center; }
+  text-align: center;
+  vertical-align: baseline; }
+  #header #mainnav ul {
+    display: inline-block; }
+    #header #mainnav ul li {
+      display: inline-block; }
+      #header #mainnav ul li a {
+        position: relative;
+        background-color: orange;
+        color: white;
+        padding: 1em 2em;
+        line-height: 1.25em; }
 
 body {
   background-color: #ffffff;
   padding-bottom: 52px;
-  color: #ffffff; }
+  color: #d3d1d1; }
   body h3 {
     color: #333333; }
   body h2 {
@@ -41,24 +73,7 @@ body {
   text-align: left;
   padding: 10px; }
 
-#navbarBottom {
-  background-color: #333333; }
-  #navbarBottom #links {
-    padding-top: 10px;
-    text-align: center; }
-  #navbarBottom li {
-    list-style: none;
-    display: inline;
-    padding: 0 40px; }
-  #navbarBottom a {
-    color: white;
-    font-size: 20px;
-    font-weight: 600; }
-  #navbarBottom a:hover {
-    color: #7D26CD;
-    text-decoration: none; }
-
-/* new_post.dust */
+/* newPost.dust */
 #new-post {
   color: #333333; }
   #new-post input {

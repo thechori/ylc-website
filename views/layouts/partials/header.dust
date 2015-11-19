@@ -1,19 +1,51 @@
 <!-- header.dust -->
-<div id='header' class='container'>
+<div id='header' >
 
-  <div id='topnav' class='container'>
-    <ul class=''>
+  <div id='topnav'>
+    <ul class='toplinks'>
       <li id='navabout'>
-        <a href='/about'>About</a>
+        <a href='/about'>ABOUT</a>
+      </li>
+      <li id='navmentors'>
+        <a href='/mentor'>MENTORS</a>
+      </li>
+      <li id='navparents'>
+        <a href='/partner'>PARENTS</a>
+      </li>
+      <li id='navvolunteers'>
+        <a href='/volunteer'>VOLUNTEERS</a>
+      </li>
+      <li id='navpartners'>
+        <a href='/partner'>PARTNERS</a>
+      </li>
+      <li id='navdonate'>
+        <a href='/donate'>DONATE</a>
       </li>
     </ul>
-    students | mentors | parents | volunteers | partners | donate
   </div>
   <div id='midnav'>
-    <img id='logo' src='https://s3.amazonaws.com/ylc-website/images/ylc-logo-green.png' />
+    <a href='/'>
+      <img id='logo' src='https://s3.amazonaws.com/ylc-website/images/ylc-logo-green.png' />
+    </a>
   </div>
   <div id='mainnav'>
-    home | about | conference | gallery | contact
+    <ul class='mainlinks'>
+      <li id='home'>
+        <a href='/'>Home</a>
+      </li>
+      <li id='home'>
+        <a href='/about'>About</a>
+      </li>
+      <li id='home'>
+        <a href='/conference'>Conference</a>
+      </li>
+      <li id='home'>
+        <a href='/gallery'>Gallery</a>
+      </li>
+      <li id='home'>
+        <a href='/contact'>Contact</a>
+      </li>
+    </ul>
   </div>
 
 </div>
