@@ -1,7 +1,7 @@
 #header #topnav {
-  width: 100%;
   background-color: #333333;
-  height: 40px; }
+  height: 40px;
+  border-bottom: 1px solid #191919; }
   #header #topnav ul {
     height: 100%;
     text-align: right;
@@ -23,14 +23,15 @@
 #header #midnav {
   background-color: #7D26CD;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  border-top: 1px solid #8a3bd2;
+  border-bottom: 1px solid #641ea4; }
   #header #midnav #logo {
     padding: 2em; }
 #header #mainnav {
   height: 3em;
   text-align: center;
-  vertical-align: baseline;
-  background-color: #7D26CD; }
+  background-color: #7D26CD;
+  border-top: 1px solid #8a3bd2; }
   #header #mainnav ul {
     height: 100%;
     display: inline-block;
@@ -39,7 +40,7 @@
       display: inline-block;
       height: 100%; }
       #header #mainnav ul li a {
-        font-size: 1.15em;
+        font-size: 1em;
         color: white;
         height: 100%;
         padding: .75em 2.5em;

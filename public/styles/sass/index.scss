@@ -1,25 +1,29 @@
 // Variables
 $moneyGreen: #216C2A;
 $fireRed: #9C2A00;
+$ylcPurpleLighter: #8a3bd2;
 $ylcPurple: #7D26CD;
-$ylcPurple-lighter: #8a3bd2;
+$ylcPurpleDarker: #641ea4;
 $sexyBlue: #0000e5;
 $white: #ffffff;
 $gold: #ffd700;
 $offWhite: #faebd7;
 $links: #000080;
-$darkerGrey: rgb(25, 25, 25);
-$darkGrey: rgb(51, 51, 51);
 $lightGrey: rgb(211, 209, 209);
+$darkGrey: rgb(51, 51, 51);
+$darkerGrey: rgb(25, 25, 25);
+
+
 
 // Sizes
 $medium_text: 16px;
 
 #header {
   #topnav {
-    width: 100%;
+    //width: 100%;
     background-color: $darkGrey;
     height: 40px;
+    border-bottom: 1px solid $darkerGrey;
 
     ul {
       height: 100%;
@@ -52,7 +56,8 @@ $medium_text: 16px;
   #midnav {
     background-color: $ylcPurple;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid $ylcPurpleLighter;
+    border-bottom: 1px solid $ylcPurpleDarker;
 
     #logo {
       padding: 2em;
@@ -61,8 +66,8 @@ $medium_text: 16px;
   #mainnav {
     height: 3em;
     text-align: center;
-    vertical-align: baseline;
     background-color: $ylcPurple;
+    border-top: 1px solid $ylcPurpleLighter;
 
     ul {
       height: 100%;
@@ -72,7 +77,7 @@ $medium_text: 16px;
         display: inline-block;
         height: 100%;
         a {
-          font-size: 1.15em;
+          font-size: 1em;
           color: white;
           height: 100%;
           padding: .75em 2.5em;

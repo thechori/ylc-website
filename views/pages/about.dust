@@ -3,7 +3,7 @@
 
 <!-- index.dust -->
 {<body}
-<div class='container text-center'>
+<div class='text-center'>
   <h2>About</h2>
   <p>about about about about</p>
   <p>about about about about</p>
