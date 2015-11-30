@@ -9,21 +9,53 @@ $white: #ffffff;
 $gold: #ffd700;
 $offWhite: #faebd7;
 $links: #000080;
+$lightestGrey: #ededed;
 $lightGrey: rgb(211, 209, 209);
 $darkGrey: rgb(51, 51, 51);
 $darkerGrey: rgb(25, 25, 25);
 
-
-
 // Sizes
 $medium_text: 16px;
+
+// Screen sizes
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 1023px) {
+//   body {
+//     color: orange !important;
+//   }
+// }
+//
+// @media (min-width: 1024px) {
+//   body {
+//     color: pink !important;
+//   }
+// }
+
+.container-fluid {
+  padding: 0;
+}
 
 #header {
   #topnav {
     //width: 100%;
     background-color: $darkGrey;
-    height: 40px;
+    height: 2.5em;
     border-bottom: 1px solid $darkerGrey;
+
 
     ul {
       height: 100%;
@@ -95,7 +127,7 @@ $medium_text: 16px;
 }
 
 body {
-  background-color: $white;
+  background-color: #ffffff;
   padding-bottom: 52px;
   color: $lightGrey;
 
@@ -136,6 +168,24 @@ body {
   width: 100%;
   text-align: left;
   padding: 10px;
+}
+
+/* index.dust */
+.carousel-img {
+  width: 100%;
+
+}
+
+#news {
+  background-color: $lightestGrey;
+  text-align: left;
+  padding: 0px 30px;
+  
+  ul {
+    padding: 0;
+  }
+
+
 }
 
 /* newPost.dust */

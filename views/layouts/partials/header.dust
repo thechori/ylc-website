@@ -30,16 +30,16 @@
       <li id='home'>
         <a href='/'>Home</a>
       </li>
-      <li id='home'>
+      <li id='about'>
         <a href='/about'>About</a>
       </li>
-      <li id='home'>
+      <li id='conference'>
         <a href='/conference'>Conference</a>
       </li>
-      <li id='home'>
+      <li id='gallery'>
         <a href='/gallery'>Gallery</a>
       </li>
-      <li id='home'>
+      <li id='contact'>
         <a href='/contact'>Contact</a>
       </li>
     </ul>

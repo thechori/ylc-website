@@ -1,6 +1,9 @@
+.container-fluid {
+  padding: 0; }
+
 #header #topnav {
   background-color: #333333;
-  height: 40px;
+  height: 2.5em;
   border-bottom: 1px solid #191919; }
   #header #topnav ul {
     height: 100%;
@@ -82,6 +85,17 @@ body {
   width: 100%;
   text-align: left;
   padding: 10px; }
+
+/* index.dust */
+.carousel-img {
+  width: 100%; }
+
+#news {
+  background-color: #ededed;
+  text-align: left;
+  padding: 0px 30px; }
+  #news ul {
+    padding: 0; }
 
 /* newPost.dust */
 #new-post {

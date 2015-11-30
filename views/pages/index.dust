@@ -3,19 +3,29 @@
 
 <!-- index.dust -->
 {<body}
-<div class='container text-center'>
-  <h2>Welcome to YLC!</h2>
+<div class='container-fluid text-center'>
 
-  <ul>
-  {#posts}
-    <li>
-      <h3>{.title}</h3>
-      {.body}<br>
-      {.author}<br>
-      {.createdAt}
-    </li>
-  {/posts}
-  </ul>
+  <!-- TODO: Insert image slider -->
+  <img src='images/carousel/02_cropped.jpg' class='carousel-img' />
+
+  <section id="news">
+    <div class="container">
+      <h3>News</h3>
+      <ul>
+      {#posts}
+        <li>
+          <h3>{.title}</h3>
+          {.body}<br>
+          {.author}<br>
+          {.createdAt}
+        </li>
+      {/posts}
+      </ul>
+    </div>
+  </section>
+  <section id="events">
+
+  </section>
 
 </div>
 {/body}
