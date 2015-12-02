@@ -95,7 +95,7 @@ $desktop-width: 1024px;
     border-bottom: 1px solid $ylcPurpleDarker;
 
     #logo {
-      padding: 2em;
+      padding: 1.5em;
     }
   }
   #mainnav {
@@ -177,25 +177,30 @@ body {
   background-color: $footerGrey;
   color: white;
   width: 100%;
-  height: 200px;
   text-align: left;
   margin-top: 15px;
+  text-align: center;
+  padding: 15px;
 
   #info {
-    background: orange;
+    // background: orange;
 
     #left-links {
-      background: yellow;
+      // background: yellow;
     }
     #logo {
-      background: purple;
+      // background: purple;
     }
     #right-links {
-      background: pink;
+      // background: pink;
     }
   }
   #social {
-    background: brown;
+    // background: brown;
+  }
+  #signature {
+    padding-top: 5px;
+    font-size: .8em;
   }
 }
 
@@ -208,6 +213,12 @@ body {
   background-color: $lightestGrey;
   text-align: left;
   padding: 0px 30px;
+
+  .title {
+    h3 {
+      color: $ylcPurple;
+    }
+  }
 
   ul {
     padding: 0;

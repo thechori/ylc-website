@@ -10,17 +10,21 @@
 
   <section id="news">
     <div class="container">
-      <h3>News</h3>
-      <ul>
-      {#posts}
-        <li>
-          <h3>{.title}</h3>
-          {.body}<br>
-          {.author}<br>
-          {.createdAt}
-        </li>
-      {/posts}
-      </ul>
+      <div class="title">
+        <h3>News</h3>
+      </div>
+      <div class="posts">
+        <ul>
+        {#posts}
+          <li>
+            <h3>{.title}</h3>
+            {.body}<br>
+            {.author}<br>
+            {.createdAt}
+          </li>
+        {/posts}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -39,20 +43,36 @@
       <div id="info" class="row-fluid">
         <!-- Main links -->
         <div id="left-links" class="col-xs-6 col-lg-3">
-          .col-xs-6 .col-lg-3
+          <!-- <ul>
+            <li>left-links</li>
+            <li>left-links</li>
+            <li>left-links</li>
+            <li>left-links</li>
+          </ul> -->
         </div>
         <div id="logo" class="col-xs-12 col-lg-6">
-          .col-xs-12 .col-lg-6
+          <a href='/'>
+            <!-- <img id='logo' src='https://s3.amazonaws.com/ylc-website/images/ylc-logo-green.png' /> -->
+            <img id='logo' src='images/ylc-logo-sm.png' />
+          </a>
         </div>
         <div id="right-links" class="col-xs-6 col-lg-3">
-          .col-xs-6 .col-lg-3
+          <!-- <ul>
+            <li>right-links</li>
+            <li>right-links</li>
+            <li>right-links</li>
+            <li>right-links</li>
+          </ul> -->
         </div>
       </div>
 
       <div class="row-fluid">
         <!-- Social media links -->
         <div id="social" class="col-xs-12 col-lg-12">
-          social links
+          facebook | twitter | instagram | myspace
+        </div>
+        <div id="signature" class="col-xs-12 col-lg-12">
+          © 2015 Ryan Teodoro
         </div>
       </div>
     </div>
