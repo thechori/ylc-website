@@ -23,9 +23,39 @@
       </ul>
     </div>
   </section>
-  <section id="events">
 
+  <section id="events">
+    <div class="container">
+      <h3>Events</h3>
+      <p>Some information about events</p>
+      <p>Some information about events</p>
+      <p>Some information about events</p>
+      <p>Some information about events</p>
+    </div>
   </section>
 
+  <section id="footer">
+    <div class="container-fluid">
+      <div id="info" class="row-fluid">
+        <!-- Main links -->
+        <div id="left-links" class="col-xs-6 col-lg-3">
+          .col-xs-6 .col-lg-3
+        </div>
+        <div id="logo" class="col-xs-12 col-lg-6">
+          .col-xs-12 .col-lg-6
+        </div>
+        <div id="right-links" class="col-xs-6 col-lg-3">
+          .col-xs-6 .col-lg-3
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <!-- Social media links -->
+        <div id="social" class="col-xs-12 col-lg-12">
+          social links
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 {/body}

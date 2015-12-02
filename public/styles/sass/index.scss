@@ -13,6 +13,7 @@ $lightestGrey: #ededed;
 $lightGrey: rgb(211, 209, 209);
 $darkGrey: rgb(51, 51, 51);
 $darkerGrey: rgb(25, 25, 25);
+$footerGrey: #565656;
 
 // Sizes
 $medium_text: 16px;
@@ -21,8 +22,9 @@ $medium_text: 16px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+// Mixins
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1}) {
     @content;
   }
 }
@@ -32,6 +34,7 @@ $desktop-width: 1024px;
     @content;
   }
 }
+
 
 // @media (min-width: 768px) and (max-width: 1023px) {
 //   body {
@@ -55,7 +58,7 @@ $desktop-width: 1024px;
     background-color: $darkGrey;
     height: 2.5em;
     border-bottom: 1px solid $darkerGrey;
-
+    overflow: hidden;
 
     ul {
       height: 100%;
@@ -100,11 +103,14 @@ $desktop-width: 1024px;
     text-align: center;
     background-color: $ylcPurple;
     border-top: 1px solid $ylcPurpleLighter;
+    overflow: hidden;
 
     ul {
       height: 100%;
       display: inline-block;
       margin: 0;
+      padding: 0;
+
       li {
         display: inline-block;
         height: 100%;
@@ -128,11 +134,16 @@ $desktop-width: 1024px;
 
 body {
   background-color: #ffffff;
-  padding-bottom: 52px;
-  color: $lightGrey;
+  color: $darkerGrey;
 
   h3 {
     color: $darkGrey;
+    @include tablet {
+      color: orange;
+    }
+    @include desktop {
+      color: red;
+    }
   }
 
   h2 {
@@ -163,29 +174,48 @@ body {
 }
 
 #footer {
-  background-color: $darkGrey;
+  background-color: $footerGrey;
   color: white;
   width: 100%;
+  height: 200px;
   text-align: left;
-  padding: 10px;
+  margin-top: 15px;
+
+  #info {
+    background: orange;
+
+    #left-links {
+      background: yellow;
+    }
+    #logo {
+      background: purple;
+    }
+    #right-links {
+      background: pink;
+    }
+  }
+  #social {
+    background: brown;
+  }
 }
 
 /* index.dust */
 .carousel-img {
   width: 100%;
-
 }
 
 #news {
   background-color: $lightestGrey;
   text-align: left;
   padding: 0px 30px;
-  
+
   ul {
     padding: 0;
   }
+}
 
-
+#events {
+  text-align: left;
 }
 
 /* newPost.dust */
