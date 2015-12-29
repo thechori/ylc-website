@@ -3,6 +3,9 @@
 
   <div id='topnav'>
     <ul class='toplinks'>
+      <li id='navstudents'>
+        <a href='/mentor'>STUDENTS</a>
+      </li>
       <li id='navmentors'>
         <a href='/mentor'>MENTORS</a>
       </li>
@@ -16,7 +19,7 @@
         <a href='/partner'>PARTNERS</a>
       </li>
       <li id='navdonate'>
-        <a href='/donate' class='donate-link'>DONATE</a>
+        <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6211842' class='donate-link'>DONATE</a>
       </li>
     </ul>
   </div>

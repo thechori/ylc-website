@@ -19,12 +19,8 @@
   <!-- page content -->
   {+body/}
 
-  {! footer !}
-  {! appears mid page without a lot of content  !}
-  {! {> "layouts/partials/footer" /} !}
-
-  <!-- bottom-fixed navbar -->
-  {! {> "layouts/partials/navbarBottom" /} !}
+  <!-- Footer -->
+  {> "layouts/partials/footer" /}
 
   <!-- Scripts -->
   <script src="jquery/dist/jquery.js"></script>

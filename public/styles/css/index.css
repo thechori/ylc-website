@@ -24,6 +24,8 @@
       #header #topnav ul li a:hover {
         text-decoration: none;
         background-color: #191919; }
+  #header #topnav .donate-link {
+    color: gold; }
 #header #midnav {
   background-color: #7D26CD;
   text-align: center;
@@ -74,6 +76,10 @@ body {
     color: #333333; }
   body li {
     list-style: none; }
+  body .student-image {
+    border-radius: 50%; }
+  body .faculty-image {
+    border-radius: 50%; }
 
 .slideme {
   max-width: 1000px;
@@ -103,14 +109,43 @@ body {
 .carousel-img {
   width: 100%; }
 
-#news {
+#front-main-container {
   background-color: #ededed;
-  text-align: left;
-  padding: 0px 30px; }
-  #news .title h3 {
+  text-align: left; }
+  #front-main-container .title h3 {
     color: #7D26CD; }
-  #news ul {
+  #front-main-container ul {
     padding: 0; }
+  #front-main-container #left .student-stories {
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    #front-main-container #left .student-stories .student-text {
+      margin: 0;
+      padding: 0; }
+    #front-main-container #left .student-stories .stories-text {
+      margin: 0;
+      padding: 0;
+      color: #0ccd70;
+      font-size: 32px;
+      font-weight: 900;
+      font-family: 'Adelle', Arial, sans-serif; }
+    #front-main-container #left .student-stories .title {
+      font-weight: bold; }
+  #front-main-container #right .title {
+    color: #008aff;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 14px; }
+  #front-main-container #right #faculty-members .member {
+    background-color: orange;
+    padding: 10px;
+    border: 1px black solid;
+    margin: 5px; }
+  #front-main-container #right #faculty-members .name {
+    font-weight: bold; }
+  #front-main-container #right #faculty-members .position {
+    font-style: italic; }
 
 #events {
   text-align: left; }

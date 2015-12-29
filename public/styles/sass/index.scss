@@ -36,18 +36,6 @@ $desktop-width: 1024px;
 }
 
 
-// @media (min-width: 768px) and (max-width: 1023px) {
-//   body {
-//     color: orange !important;
-//   }
-// }
-//
-// @media (min-width: 1024px) {
-//   body {
-//     color: pink !important;
-//   }
-// }
-
 .container-fluid {
   padding: 0;
 }
@@ -86,6 +74,10 @@ $desktop-width: 1024px;
           background-color: $darkerGrey;
         }
       }
+    }
+
+    .donate-link {
+      color: gold;
     }
   }
   #midnav {
@@ -156,6 +148,14 @@ body {
   li {
     list-style: none;
   }
+
+  .student-image {
+    border-radius: 50%;
+  }
+
+  .faculty-image {
+    border-radius: 50%;
+  }
 }
 
 
@@ -209,10 +209,10 @@ body {
   width: 100%;
 }
 
-#news {
+#front-main-container {
   background-color: $lightestGrey;
   text-align: left;
-  padding: 0px 30px;
+  // padding: 0px 30px;
 
   .title {
     h3 {
@@ -223,6 +223,63 @@ body {
   ul {
     padding: 0;
   }
+
+  #left {
+    // background: red;
+    .student-stories {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      .student-text {
+        margin: 0;
+        padding: 0;
+      }
+
+      .stories-text {
+        margin: 0;
+        padding: 0;
+        color: #0ccd70;
+        font-size: 32px;
+        font-weight: 900;
+        font-family: 'Adelle', Arial, sans-serif;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #middle {
+    // background: green;
+  }
+
+  #right {
+    // background: blue;
+    .title {
+      color: #008aff;
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    #faculty-members {
+      .member {
+        background-color: orange;
+        padding: 10px;
+        border: 1px black solid;
+        margin: 5px;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .position {
+        font-style: italic;
+      }
+    }
+  }
+
 }
 
 #events {

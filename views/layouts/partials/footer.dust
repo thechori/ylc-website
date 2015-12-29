@@ -1,4 +1,20 @@
 <!-- footer.dust -->
 <div id='footer'>
-  © Ryan Teodoro
+  <div class="container-fluid">
+    <div id="logo">
+      <a href='/'>
+        <!-- <img id='logo' src='https://s3.amazonaws.com/ylc-website/images/ylc-logo-green.png' /> -->
+        <img id='logo' src='images/ylc-logo-sm.png' />
+      </a>
+    </div>
+    <div class="row-fluid">
+      <!-- Social media links -->
+      <div id="social" class="col-xs-12 col-lg-12">
+        facebook | twitter | instagram | myspace
+      </div>
+      <div id="signature" class="col-xs-12 col-lg-12">
+        © 2015 Ryan Teodoro
+      </div>
+    </div>
+  </div>
 </div>
