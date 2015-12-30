@@ -35,6 +35,18 @@ $desktop-width: 1024px;
   }
 }
 
+// Site-wide styling
+.see-all {
+  font-size: 16px;
+  color: #008aff;
+  line-height: 30px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// End Site-wide styling
 
 .container-fluid {
   padding: 0;
@@ -214,22 +226,22 @@ body {
   text-align: left;
   // padding: 0px 30px;
 
-  .title {
-    h3 {
-      color: $ylcPurple;
-    }
-  }
-
   ul {
     padding: 0;
   }
 
   #left {
     // background: red;
+    padding: 15px;
+
     .student-stories {
       text-align: center;
       margin: 0;
       padding: 0;
+
+      .header {
+        margin-top: 15px;
+      }
 
       .student-text {
         margin: 0;
@@ -253,23 +265,55 @@ body {
 
   #middle {
     // background: green;
+    padding: 15px;
+
+    .title {
+      color: $ylcPurple;
+      // background-color: pink;
+      margin: 0;
+      padding: 0;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    ul {
+      // background-color: orange;
+    }
+
+    .posts {
+      .post-title {
+        font-size: 32px;
+        color: #212830;
+      }
+
+    }
   }
 
   #right {
     // background: blue;
+    padding: 15px;
+
+    .header {
+      margin: 0;
+    }
+
     .title {
       color: #008aff;
       font-size: 32px;
       font-weight: 900;
-      margin-bottom: 14px;
     }
 
-    #faculty-members {
+    #board-members {
+      .header {
+        margin: 10px 0px;
+      }
+
       .member {
-        background-color: orange;
-        padding: 10px;
-        border: 1px black solid;
-        margin: 5px;
+        // background-color: orange;
+        padding: 0px;
+        margin: 0px;
+        // border: 1px black solid;
+        margin: 10px 0px;
       }
       .name {
         font-weight: bold;

@@ -13,7 +13,7 @@
     <div class='row-fluid' style='width: 100%;'>
 
       <!-- Left column -->
-      <div id='left' class='col-md-3 col-lg-3'>
+      <div id='left' class='hidden-xs col-sm-3 col-md-3 col-lg-3'>
         <div class='student-stories'>
           <div class='header'>
             <div class='student-text'>STUDENT</div>
@@ -32,20 +32,46 @@
                 college and becoming a mentor to help pay her knowledge forward
               </div>
             </div>
+            <div class='story'>
+              <div class='image'>
+                <img class='student-image' src='images/faculty/temp_student_md.jpg' />
+              </div>
+              <div class='title'>
+                Alumni Spotlight: Bobby Jackson
+              </div>
+              <div class='description'>
+                Bobby joined YLC 5 years ago and has fallen in love with the
+                conference. His goal is to one day become the YLC president.
+              </div>
+            </div>
+            <div class='story'>
+              <div class='image'>
+                <img class='student-image' src='images/faculty/temp_student_md.jpg' />
+              </div>
+              <div class='title'>
+                Alumni Spotlight: Jessica Jones
+              </div>
+              <div class='description'>
+                Jessica has many super powers and likes to use them for good. She
+                joined YLC because of her friends but no eats chickens for a living.
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!--
+      Haha sounds like a date. Have any plans for NYE?
+      -->
+
       <!-- Middle column -->
-      <div id='middle' class='col-md-6 col-lg-6'>
-        <div class="title">
-          <h3>News</h3>
-        </div>
+      <div id='middle' class='col-sm-6 col-md-6 col-lg-6'>
+        <div class="title">News</div>
         <div class="posts">
           <ul>
           {#posts}
             <li>
-              <h3>{.title}</h3>
+              <div class='post-title'>{.title}</div>
               {.body}<br>
               {.author}<br>
               {.createdAt}
@@ -56,19 +82,19 @@
       </div>
 
       <!-- Right column -->
-      <div id='right' class='col-mg-3 col-lg-3'>
-        <div class='faculty-header'>
+      <div id='right' class='col-sm-3 col-md-3 col-lg-3'>
+        <div class='header'>
           <div class='title'>
             Faculty
           </div>
           <div class='description'>
-            Our faculty are passionate about making an impact, both on campus
-            and in the world beyond.<br>
-            <a href='/faculty'>SEE ALL</a>
+            Our board members are passionate about making an impact, volunteering
+            their time to helping make a difference in students.<br>
+            <a href='/board' class='see-all'>SEE ALL</a>
           </div>
         </div>
 
-        <div id='faculty-members'>
+        <div id='board-members'>
 
           <div class='member'>
             <div class='image'>
@@ -81,8 +107,9 @@
               President
             </div>
             <div class='description'>
-              Angela has been actively involved in YLC since 2000. First as a
-              mentee, and now as the president. She is cool.
+              Angela currently works as the HR Advisor at BG Group. She received
+              her Bachelor’s from the University of Texas at Austin in May 2012,
+              and her Master’s from the University of Houston in May 2014.
             </div>
           </div>
 
@@ -91,14 +118,14 @@
               <img class='faculty-image' src='images/faculty/temp_belongie_sm.jpg' />
             </div>
             <div class='name'>
-              Angela Wang
+              Christina Ma
             </div>
             <div class='position'>
-              President
+              Program Director
             </div>
             <div class='description'>
-              Angela has been actively involved in YLC since 2000. First as a
-              mentee, and now as the president. She is cool.
+              Christina currently works with her mom and brother at a Financial
+              Advising Firm that focuses in retirement planning
             </div>
           </div>
 
@@ -107,14 +134,15 @@
               <img class='faculty-image' src='images/faculty/temp_belongie_sm.jpg' />
             </div>
             <div class='name'>
-              Angela Wang
+              Jason Tung
             </div>
             <div class='position'>
-              President
+              Mentor Director
             </div>
             <div class='description'>
-              Angela has been actively involved in YLC since 2000. First as a
-              mentee, and now as the president. She is cool.
+              Jason is a management consultant with The Boston Consulting Group.
+              He holds a MBA from the Tuck School of Business at Dartmouth and a
+              BA from Rice University.
             </div>
           </div>
 
@@ -123,14 +151,15 @@
               <img class='faculty-image' src='images/faculty/temp_belongie_sm.jpg' />
             </div>
             <div class='name'>
-              Angela Wang
+              Brian Sheen
             </div>
             <div class='position'>
-              President
+              VP of Community Relations
             </div>
             <div class='description'>
-              Angela has been actively involved in YLC since 2000. First as a
-              mentee, and now as the president. She is cool.
+              Brian Sheen graduated from The University of Texas at Austin with
+              a BS in Electrical Engineering and currently works in the Oil &
+              Gas Industry in Houston, TX
             </div>
           </div>
         </div>

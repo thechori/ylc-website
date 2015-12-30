@@ -1,3 +1,10 @@
+.see-all {
+  font-size: 16px;
+  color: #008aff;
+  line-height: 30px; }
+  .see-all:hover {
+    text-decoration: none; }
+
 .container-fluid {
   padding: 0; }
 
@@ -112,40 +119,57 @@ body {
 #front-main-container {
   background-color: #ededed;
   text-align: left; }
-  #front-main-container .title h3 {
-    color: #7D26CD; }
   #front-main-container ul {
     padding: 0; }
-  #front-main-container #left .student-stories {
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-    #front-main-container #left .student-stories .student-text {
+  #front-main-container #left {
+    padding: 15px; }
+    #front-main-container #left .student-stories {
+      text-align: center;
       margin: 0;
       padding: 0; }
-    #front-main-container #left .student-stories .stories-text {
+      #front-main-container #left .student-stories .header {
+        margin-top: 15px; }
+      #front-main-container #left .student-stories .student-text {
+        margin: 0;
+        padding: 0; }
+      #front-main-container #left .student-stories .stories-text {
+        margin: 0;
+        padding: 0;
+        color: #0ccd70;
+        font-size: 32px;
+        font-weight: 900;
+        font-family: 'Adelle', Arial, sans-serif; }
+      #front-main-container #left .student-stories .title {
+        font-weight: bold; }
+  #front-main-container #middle {
+    padding: 15px; }
+    #front-main-container #middle .title {
+      color: #7D26CD;
       margin: 0;
       padding: 0;
-      color: #0ccd70;
       font-size: 32px;
-      font-weight: 900;
-      font-family: 'Adelle', Arial, sans-serif; }
-    #front-main-container #left .student-stories .title {
+      font-weight: 900; }
+    #front-main-container #middle .posts .post-title {
+      font-size: 32px;
+      color: #212830; }
+  #front-main-container #right {
+    padding: 15px; }
+    #front-main-container #right .header {
+      margin: 0; }
+    #front-main-container #right .title {
+      color: #008aff;
+      font-size: 32px;
+      font-weight: 900; }
+    #front-main-container #right #board-members .header {
+      margin: 10px 0px; }
+    #front-main-container #right #board-members .member {
+      padding: 0px;
+      margin: 0px;
+      margin: 10px 0px; }
+    #front-main-container #right #board-members .name {
       font-weight: bold; }
-  #front-main-container #right .title {
-    color: #008aff;
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 14px; }
-  #front-main-container #right #faculty-members .member {
-    background-color: orange;
-    padding: 10px;
-    border: 1px black solid;
-    margin: 5px; }
-  #front-main-container #right #faculty-members .name {
-    font-weight: bold; }
-  #front-main-container #right #faculty-members .position {
-    font-style: italic; }
+    #front-main-container #right #board-members .position {
+      font-style: italic; }
 
 #events {
   text-align: left; }
