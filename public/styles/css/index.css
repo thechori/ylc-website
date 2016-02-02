@@ -1,3 +1,6 @@
+.content {
+  min-height: 500px; }
+
 .see-all {
   font-size: 16px;
   color: #008aff;
@@ -38,8 +41,6 @@
   text-align: center;
   border-top: 1px solid #8a3bd2;
   border-bottom: 1px solid #641ea4; }
-  #header #midnav #logo {
-    padding: 1.5em; }
 #header #mainnav {
   height: 3em;
   text-align: center;
@@ -139,8 +140,12 @@ body {
         font-size: 32px;
         font-weight: 900;
         font-family: 'Adelle', Arial, sans-serif; }
-      #front-main-container #left .student-stories .title {
-        font-weight: bold; }
+      #front-main-container #left .student-stories .story {
+        margin: 20px 0px; }
+        #front-main-container #left .student-stories .story .student-image {
+          padding: 10px 0px; }
+        #front-main-container #left .student-stories .story .title {
+          font-weight: bold; }
   #front-main-container #middle {
     padding: 15px; }
     #front-main-container #middle .title {

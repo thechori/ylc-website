@@ -1,0 +1,15 @@
+<!-- include layout -->
+{> "layouts/main" /}
+
+<!-- index.dust -->
+{<body}
+
+<div class='text-center'>
+  <h2>Informational Page: {title}</h2>
+  <p>about about about about</p>
+  <p>about about about about</p>
+  <p>about about about about</p>
+  <p>about about about about</p>
+</div>
+
+{/body}

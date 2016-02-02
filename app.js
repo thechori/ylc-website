@@ -14,6 +14,9 @@ var express = require('express'),
     // routes
     index = require('./routes/index.js'),
     about = require('./routes/about.js'),
+    conference = require('./routes/conference.js'),
+    partners = require('./routes/partners'),
+    contact = require('./routes/contact'),
     //newpost = require('./routes/newpost.js'), TODO: Implement this
 
     // app
@@ -29,9 +32,9 @@ app.use('/jquery', express.static(__dirname + "/node_modules/jquery"));
 app.use('/sweetalert', express.static(__dirname + '/node_modules/sweetalert'));
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 // tell express to look in the public dir for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
@@ -39,7 +42,7 @@ app.use(express.static(__dirname + '/public'));
 // copy and pasted from method-override, necessary
 // using use will make sure that every req that hits this controller
 // will pass through these controllers
-router.use(bodyParser.urlencoded({ extended: true }))
+router.use(bodyParser.urlencoded({ extended: true }));
 router.use(methodOverride(function(req, res) {
   if (req.body && typeof req.body === 'object' && '_method' in req.body) {
     // look in urlencoded POST bodies and delete it
@@ -72,7 +75,6 @@ router.route('/')
     ;
   })
 ;
-
 router.route('/newpost')
   // new post
   .get(function(req, res, next) {
@@ -100,12 +102,16 @@ router.route('/newpost')
     });
   })
 ;
-
+router.route('/')
 
 // register routes
 app.use(router); // could also prepend "/api" or something if we wanted all routes to contain this prefix
 app.use(index);
 app.use(about);
+app.use(conference);
+app.use(partners);
+app.use(contact);
+
 // app.use(newpost); TODO: Implement this
 
 

@@ -36,6 +36,10 @@ $desktop-width: 1024px;
 }
 
 // Site-wide styling
+.content {
+  min-height: 500px;
+}
+
 .see-all {
   font-size: 16px;
   color: #008aff;
@@ -99,7 +103,7 @@ $desktop-width: 1024px;
     border-bottom: 1px solid $ylcPurpleDarker;
 
     #logo {
-      padding: 1.5em;
+      // padding: 1.5em;
     }
   }
   #mainnav {
@@ -242,12 +246,10 @@ body {
       .header {
         margin-top: 15px;
       }
-
       .student-text {
         margin: 0;
         padding: 0;
       }
-
       .stories-text {
         margin: 0;
         padding: 0;
@@ -257,9 +259,16 @@ body {
         font-family: 'Adelle', Arial, sans-serif;
       }
 
-      .title {
-        font-weight: bold;
+      .story {
+        margin: 20px 0px;
+        .student-image {
+          padding: 10px 0px;
+        }
+        .title {
+          font-weight: bold;
+        }
       }
+
     }
   }
 
