@@ -1,3 +1,6 @@
+# This repo is now deprecated in favor of [this one](https://github.com/thechori/ylc)
+You can view the new site [here](http://www.ylc.net)
+
 # ylc-website #
 
 ## Quick summary ##
@@ -10,21 +13,15 @@ The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordp
 
 * Configuration
 
-+ Source code is stored and tracked on GitHub @ ____ (Git)
 + Hosted and deployed on Heroku @ ylc-webste.herokuapp.com (Node.js)
 + Database hosted on MongoLab server (MongoDB)
-
-<pre>
-  console.log("This is a test of the pre tag.");
-</pre>
 
 Heroku (Node Web Server)
 URL: ylc-website.herokuapp.com
 
 * Dependencies
-
--jQuery
--
+- jQuery
+- Bootstrap
 
 * Database configuration
 
