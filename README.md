@@ -26,10 +26,10 @@ $ npm install
 
 - Spin up the PHP server and serve the files 
 ```
-$ php -S localhost:<port>
+$ php -S localhost:3000
 ```
 
-- Open your browser of choice and navigate to http://localhost:<port>
+- Open your browser of choice and navigate to http://localhost:3000
 
 * Configuration
 
