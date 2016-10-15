@@ -7,7 +7,7 @@ You can view the new site [here](http://www.ylc.net)
 
 The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community.
 
-### How do I get set up locally? ###
+### Installation
 
 - Grab the code
 ```
@@ -31,7 +31,7 @@ $ php -S localhost:3000
 
 - Open your browser of choice and navigate to http://localhost:3000
 
-* Configuration
+## Configuration
 
 + Hosted and deployed on Heroku @ ylc-webste.herokuapp.com (Node.js)
 + Database hosted on MongoLab server (MongoDB)
