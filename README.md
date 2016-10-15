@@ -7,7 +7,7 @@ You can view the new site [here](http://www.ylc.net)
 
 The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community.
 
-### Installation
+## Installation
 
 - Grab the code
 ```
