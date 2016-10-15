@@ -7,9 +7,29 @@ You can view the new site [here](http://www.ylc.net)
 
 The revamped YLC website utilizing the MEAN stack. Before, it was a simple Wordpress site that was not responsive. This design will integrate the new responsive capabilities using Bootstrap and an updated UI for a better UX with the students and community.
 
-### How do I get set up? ###
+### How do I get set up locally? ###
 
-* Summary of set up
+- Grab the code
+```
+$ git clone git@github.com:thechori/ylc-website.git
+```
+
+- Open the newly created directory
+```
+$ cd ylc-website
+```
+
+- Run the NPM install 
+```
+$ npm install
+```
+
+- Spin up the PHP server and serve the files 
+```
+$ php -S localhost:<port>
+```
+
+- Open your browser of choice and navigate to http://localhost:<port>
 
 * Configuration
 
@@ -37,9 +57,10 @@ Jshint tests are automatically run with every file change thanks to Grunt and it
 * Deployment instructions
 
 The project is hosted on Heroku and is deployed with the following command:
-<code>
+
+```
 git push heroku master
-</code>
+```
 
 Where "heroku" is the git remote URL that points to the Heroku server, and "master" is your local code branch
 
