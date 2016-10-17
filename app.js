@@ -122,11 +122,14 @@ app.use(contact);
 
 // Connect to DB
 if (process.env.PORT) {
+  // Production
   console.log("App is in production at port " + process.env.PORT);
-
+  var dbConn = 'mongodb://'+process.env.user+':'+process.env.password+'@'+process.env.url+':'+process.env.port+'/'+process.env.db;
+} else {
+  // Local
+  var dbConn = 'mongodb://'+settings.user+':'+settings.password+'@'+settings.url+':'+settings.port+'/'+settings.db;
 }
 
-var dbConn = 'mongodb://'+settings.user+':'+settings.password+'@'+settings.url+':'+settings.port+'/'+settings.db;
 mongoose.connect(dbConn);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
