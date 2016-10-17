@@ -127,6 +127,7 @@ if (process.env.PORT) {
   var dbConn = 'mongodb://'+process.env.user+':'+process.env.password+'@'+process.env.url+':'+process.env.port+'/'+process.env.db;
 } else {
   // Local
+  console.log("App is using local config");
   var dbConn = 'mongodb://'+settings.user+':'+settings.password+'@'+settings.url+':'+settings.port+'/'+settings.db;
 }
 
