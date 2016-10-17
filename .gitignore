@@ -4,3 +4,4 @@ misc
 *.css.map
 *.scssc
 .sass-cache/
+settings.json

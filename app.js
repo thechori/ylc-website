@@ -23,6 +23,11 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000;
 
+    // Security
+    var contents = fs.readFileSync("settings.json");
+    var settings = JSON.parse(contents);
+
+
 app.engine('dust', cons.dust);
 app.set('view engine', 'dust');
 app.set('views', __dirname + "/views")
@@ -116,12 +121,17 @@ app.use(contact);
 
 
 // Connect to DB
-var dbConnectionString = 'mongodb://ylcadmin:YLC!p455w0rd@ds053954.mongolab.com:53954/ylc-website';
-mongoose.connect(dbConnectionString);
+if (process.env.PORT) {
+  console.log("App is in production at port " + process.env.PORT);
+
+}
+
+var dbConn = 'mongodb://'+settings.user+':'+settings.password+'@'+settings.url+':'+settings.port+'/'+settings.db;
+mongoose.connect(dbConn);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function(callback) {
-  console.log('db open!');
+  console.log('db open and secure!');
 });
 
 
