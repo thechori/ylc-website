@@ -1,5 +1,5 @@
 # This repo is now deprecated in favor of [this one](https://github.com/thechori/ylc)
-You can view the new site [here](http://www.ylc.net)
+You can view this archived site [here](http://ylc-website.herokuapp.com), or the new site [here](http://www.ylc.net)
 
 # ylc-website #
 
@@ -24,9 +24,9 @@ $ cd ylc-website
 $ npm install
 ```
 
-- Spin up the PHP server and serve the files 
+- Spin up the Node server 
 ```
-$ php -S localhost:3000
+$ npm run start
 ```
 
 - Open your browser of choice and navigate to http://localhost:3000
